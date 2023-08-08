@@ -46,35 +46,47 @@
         </nav>
     </header>
     <!-- Main -->
-    <main>
-        <h1 class="tituloContacto">Contacto</h1>
-        <section class="Contactos">
-            <form method="POST">
-                <div>
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" placeholder="Ingrese su nombre" name="nombre">
+    <main class="container-lg gap-5 d-flex flex-column">
+        <section class="container-form">
+            <h1 class="tituloContacto">Contacto</h1>
+            <form action="/my-handling-form-page" method="post">
+                <div class="form-group">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="user_name" required />
                 </div>
-                <div>
-                    <label for="apellido">Apellido:</label>
-                    <input type="text" placeholder="Ingrese su apellido" name="apellido">
+                <div class="form-group">
+                    <label for="phone">Teléfono:</label>
+                    <input type="tel" id="phone" name="user_phone" />
                 </div>
-                <div>
-                    <label for="telefono">Teléfono:</label>
-                    <input type="text" placeholder="Ingrese su teléfono" name="telefono">
+                <div class="form-group">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="user_email" required />
                 </div>
-                <div>
-                    <label for="email">Email:</label>
-                    <input type="text" placeholder="Ingrese su Email" name="email">
-                </div>
-                <h2 class="textoConsulta">Dejanos tu consulta o duda. Responderemos a la brevedad.</h2>
-                <div class="cajaConsulta">
-                    <label for="consultas"></label>
-                    <textarea placeholder="Escriba su consulta" name="consultas"></textarea>
+                <div class="form-group">
+                    <label for="message">Consulta:</label>
+                    <textarea id="message" name="user_message" required></textarea>
                 </div>
                 <button type="submit">Enviar</button>
             </form>
         </section>
     </main>
+
+
+    <!-- Footer -->
+    <footer class="footer-nav">
+        <div class="footer-center">
+            <p>
+                <a href="nosotros.html" class="enlaces-nav">Nosotros</a>
+                <a href="obras-finalizadas.html" class="enlaces-nav">Obras Finalizadas</a>
+                <a href="preguntas-frecuentes.html" class="enlaces-nav">Preguntas Frecuentes</a>
+                <a href="contacto.html" class="enlaces-nav">Contacto</a>
+            </p>
+        </div>
+        <div class="footer-text">
+            <p class="footer1">Mercedes, Soriano, Uruguay</p>
+            <p class="footer2">&copy; 2019 RVA Poliuretano SRL</p>
+        </div>
+    </footer>
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
