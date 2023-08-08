@@ -1,0 +1,246 @@
+:root {
+    --color1:#354264;
+    --color2:#7AABB8;
+    --color3:#91ADC5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* NAV */
+nav {
+    background-color: var(--color1);
+}
+.nav-link{
+    color:white;
+}
+.nav-link:hover {
+    color: var(--color2)
+}
+.navbar-brand {
+    font-size: 35px;
+    color: #ffff00e5;
+    
+}
+.navbar-brand:hover {
+    color: #f5f5059f;
+}
+
+/* Estilo Index */
+
+.contenedor h1 {
+    font-size: 55px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel {
+    margin-bottom: 40px;
+    align-self: center;
+}
+.carousel-container {
+    width: 100%;
+    box-shadow: 12px 12px 12px 0px #35426481;
+}
+
+.subtitulo {
+    text-align: center;
+    font-size: 30px;
+}
+.textContainer {
+    font-size: 20px;
+    background-color: #91adc55c;
+    padding: 20px;
+    box-shadow: 5px 5px 5px 0px #35426481;
+}
+
+.imagen-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    max-width: 650px;
+    align-self: center;
+}
+.img-muestra {
+    min-width: 90%;
+}
+.muestra {
+    display: flex;
+    justify-content: center;
+    padding: 2px;
+    padding-top: 55px;
+    padding-bottom: 40px;
+}
+@media (max-width:1200px){
+    .muestra {
+        flex-direction: column;
+    }
+}
+
+
+/* Estilo Nosotros */
+.container-nosotros h2 {
+    font-size: 40px;
+    text-align: left;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.img-nosotros {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    max-width: 650px;
+    align-self: center;
+    box-shadow: 8px 8px 8px 0px #35426481;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.container-textoNosotros1, .container-textoNosotros2 {
+    background-color: #91adc55c;
+    padding: 15px;
+    box-shadow: 5px 5px 5px 0px #35426481;
+}
+.container-textoNosotros2 p {
+    font-size: 20px;
+    text-align: center;
+}
+
+.boton {
+    display: grid;
+    justify-content: center;
+    margin: 10px;
+    padding-top: 5px;
+}
+
+.boton a {
+    display: block;
+    padding: 10px 20px;
+    background-color: var(--color1);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.boton a:hover {
+    background-color: var(--color3);
+    transition: .2s;
+}
+
+/*Estilos de Preguntas Frecuentes */
+.tituloPF {
+    font-size: 40px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.contenedor-preguntas {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+/* Estilos para el acordeón */
+.accordion-item {
+    margin-bottom: 10px;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 5px 2px 5px #0000001a;
+}
+
+.accordion-button {
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    border-radius: 0;
+    padding: 15px 20px;
+    text-align: left;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.accordion-button:hover {
+    background-color: #35426471;
+    color:#000000;
+}
+
+.accordion-button.collapsed {
+    background-color: #91adc56e;
+    color: #354264;
+}
+
+.accordion-body {
+    background-color: #fff;
+    color: #000000;
+    font-size: 17px;
+    padding: 20px;
+}
+
+/* Estilo Contactos */
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .tituloPF {
+        font-size: 24px;
+    }
+}
+
+
+
+
+
+/* Estilos generales footer */
+.footer-nav {
+    background-color: var(--color3);
+    padding: 20px 0;
+    margin-top: 30px;
+    text-align: center;
+    color: #333;
+}
+
+.footer-center {
+    margin-bottom: 15px;
+}
+
+.enlaces-nav {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+}
+.enlaces-nav:hover {
+    color: white;
+    transition: .2s;
+}
+
+.footer-text {
+    font-size: 14px;
+}
+
+/* Estilos específicos */
+.footer1 {
+    margin: 0;
+    font-weight: bold;
+}
+
+.footer2 {
+    margin: 0;
+    font-size: 12px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .footer-nav {
+        padding: 15px 0;
+    }
+}
