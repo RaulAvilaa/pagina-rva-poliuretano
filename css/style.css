@@ -135,9 +135,6 @@ nav .navbar-brand:hover {
 }
 
 /* Estilos del formulario de contacto */
-.container {
-  /* Estilos para el contenedor principal */
-}
 .container h2 {
   display: flex;
   flex-wrap: wrap;
