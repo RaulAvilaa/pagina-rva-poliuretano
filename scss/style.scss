@@ -3,54 +3,33 @@
     --color2: #7AABB8;
     --color3: #91ADC5;
 }
+//base
+@import 'base/reset';
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+//componentes
+@import 'components/navbar';
+@import 'components/footer';
 
-/* NAV */
-nav {
-    background-color: var(--color1);
-}
 
-/* .nav-button {
-    background-color: white;
-} */
-
-/* .navbar-toggler:focus {
-    box-shadow: var(--color3) !important;
-} */
-
-.nav-link {
-    color: white;
-}
-
-.nav-link:hover {
-    color: var(--color2)
-}
-
-.navbar-brand {
-    font-size: 35px;
-    color: #ffff00e5;
-
-}
-
-.navbar-brand:hover {
-    color: #f5f5059f;
-}
+//layout
+@import 'layout/index';
+@import 'layout/contacto';
+@import 'layout/nosotros';
+@import 'layout/obras-finalizadas ';
+@import 'layout/preguntas-frecuentes';
 
 /* Estilo Index */
 
-.contenedor h1 {
-    font-size: 55px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-align: center;
-    padding-top: 40px;
-    padding-bottom: 20px;
-    display: flex;
-    justify-content: center;
+.contenedor {
+    h1 {
+        font-size: 55px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+        padding-top: 40px;
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .carousel {
@@ -66,6 +45,7 @@ nav {
 .subtitulo {
     text-align: center;
     font-size: 30px;
+    padding-bottom: 15px;
 }
 
 .textContainer {
@@ -81,10 +61,10 @@ nav {
     justify-content: center;
     max-width: 650px;
     align-self: center;
-}
 
-.img-muestra {
-    min-width: 90%;
+    .img-muestra {
+        min-width: 90%;
+    }
 }
 
 .muestra {
@@ -93,13 +73,12 @@ nav {
     padding: 2px;
     padding-top: 55px;
     padding-bottom: 40px;
-}
 
-@media (max-width:1200px) {
-    .muestra {
+    @media (max-width: 1200px) {
         flex-direction: column;
     }
 }
+
 
 
 /* Estilo Nosotros */
@@ -171,7 +150,8 @@ nav {
     background-color: rgba(202, 200, 200, 0.548);
     border-radius: 5px;
 }
-.column > img {
+
+.column>img {
     margin-bottom: 1rem;
     max-width: 100%;
     height: auto;
@@ -189,6 +169,7 @@ nav {
     padding: 1rem;
     font-size: 1.2rem;
 }
+
 /*FIN DE ESTILOS DE OBRAS FINALIZADAS*/
 
 

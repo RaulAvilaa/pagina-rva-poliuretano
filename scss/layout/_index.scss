@@ -1,0 +1,60 @@
+/* Estilo Index */
+
+.contenedor {
+    h1 {
+        font-size: 55px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+        padding-top: 40px;
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.carousel {
+    margin-bottom: 40px;
+    align-self: center;
+}
+
+.carousel-container {
+    width: 100%;
+    box-shadow: 12px 12px 12px 0px #35426481;
+}
+
+.subtitulo {
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 15px;
+}
+
+.textContainer {
+    font-size: 20px;
+    background-color: #91adc55c;
+    padding: 20px;
+    box-shadow: 5px 5px 5px 0px #35426481;
+}
+
+.imagen-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    max-width: 650px;
+    align-self: center;
+
+    .img-muestra {
+        min-width: 90%;
+    }
+}
+
+.muestra {
+    display: flex;
+    justify-content: center;
+    padding: 2px;
+    padding-top: 55px;
+    padding-bottom: 40px;
+
+    @media (max-width: 1200px) {
+        flex-direction: column;
+    }
+}

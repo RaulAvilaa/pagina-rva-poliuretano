@@ -1,0 +1,29 @@
+/* NAV */
+nav {
+    background-color: var(--color1);
+
+    /* .nav-button {
+    background-color: white;
+    } */
+
+    /* .navbar-toggler:focus {
+    box-shadow: var(--color3) !important;
+    } */
+
+    .nav-link {
+        color: #ffffff;
+
+        &:hover {
+            color: var(--color2);
+        }
+    }
+
+    .navbar-brand {
+        font-size: 35px;
+        color: #ffff00e5;
+
+        &:hover {
+            color: #f5f5059f;
+        }
+    }
+}
