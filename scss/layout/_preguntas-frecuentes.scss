@@ -1,0 +1,51 @@
+/* Estilos de Preguntas Frecuentes */
+.tituloPF {
+    font-size: 40px;
+    text-align: left;
+    margin-bottom: 30px;
+
+    @media (max-width: 768px) {
+        font-size: 24px;
+    }
+}
+
+.contenedor-preguntas {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    /* Estilos para el acordeón */
+    .accordion-item {
+        margin-bottom: 10px;
+        border: 1px solid #dee2e6;
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 5px 2px 5px #0000001a;
+
+        .accordion-button {
+            font-weight: bold;
+            font-size: 20px;
+            border: none;
+            border-radius: 0;
+            padding: 15px 20px;
+            text-align: left;
+            transition: background-color 0.3s ease-in-out;
+
+            &:hover {
+                background-color: #35426471;
+                color: #000000;
+            }
+
+            &.collapsed {
+                background-color: #91adc56e;
+                color: #354264;
+            }
+        }
+
+        .accordion-body {
+            background-color: #fff;
+            color: #000000;
+            font-size: 17px;
+            padding: 20px;
+        }
+    }
+}

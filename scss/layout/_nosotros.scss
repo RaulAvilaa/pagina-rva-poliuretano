@@ -1,0 +1,52 @@
+/* Estilo Nosotros */
+
+.img-nosotros {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    max-width: 650px;
+    align-self: center;
+    box-shadow: 8px 8px 8px 0px #35426481;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.container-textoNosotros1,
+.container-textoNosotros2 {
+    background-color: #91adc55c;
+    padding: 15px;
+    box-shadow: 5px 5px 5px 0px #35426481;
+
+    &.container-textoNosotros2 {
+        p {
+            font-size: 20px;
+            text-align: center;
+        }
+    }
+}
+
+.boton {
+    display: grid;
+    justify-content: center;
+    margin: 10px;
+    padding-top: 5px;
+
+    a {
+        display: block;
+        padding: 10px 20px;
+        background-color: var(--color1);
+        color: #fff;
+        text-decoration: none;
+        border-radius: 8px;
+
+        &:hover {
+            background-color: var(--color3);
+            transition: .2s;
+        }
+    }
+}

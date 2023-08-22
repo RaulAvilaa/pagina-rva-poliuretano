@@ -1,42 +1,79 @@
 @charset "UTF-8";
-:root {
-  --color1: #465886;
-  --color2: #7AABB8;
-  --color3: #91ADC5;
-}
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+:root {
+  --color1: #465886;
+  --color2: #7AABB8;
+  --color3: #91ADC5;
+}
+
 /* NAV */
 nav {
   background-color: var(--color1);
 }
-
-/* .nav-button {
-    background-color: white;
-} */
-/* .navbar-toggler:focus {
-    box-shadow: var(--color3) !important;
-} */
-.nav-link {
-  color: white;
+nav .nav-link {
+  color: #ffffff;
 }
-
-.nav-link:hover {
+nav .nav-link:hover {
   color: var(--color2);
 }
-
-.navbar-brand {
+nav .navbar-brand {
   font-size: 35px;
   color: rgba(255, 255, 0, 0.8980392157);
 }
-
-.navbar-brand:hover {
+nav .navbar-brand:hover {
   color: rgba(245, 245, 5, 0.6235294118);
+}
+
+/* Estilos generales footer */
+.footer-nav {
+  background-color: var(--color3);
+  padding: 20px 0;
+  text-align: center;
+  color: #333;
+  /* Estilos específicos */
+  /* Estilos responsivos */
+}
+.footer-nav .enlaces-nav {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+  transition: color 0.2s;
+}
+.footer-nav .enlaces-nav:hover {
+  color: white;
+}
+.footer-nav .footer-text {
+  font-size: 14px;
+}
+.footer-nav .footer1,
+.footer-nav .footer2 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 16px;
+}
+.footer-nav .footer1.footer2,
+.footer-nav .footer2.footer2 {
+  font-size: 12px;
+}
+@media (max-width: 768px) {
+  .footer-nav {
+    padding: 15px 0;
+  }
+  .footer-nav .enlaces-nav {
+    margin: 0 10px;
+  }
+  .footer-nav .footer-text {
+    font-size: 12px;
+  }
+  .footer-nav .footer1,
+  .footer-nav .footer2 {
+    font-size: 14px;
+  }
 }
 
 /* Estilo Index */
@@ -63,6 +100,7 @@ nav {
 .subtitulo {
   text-align: center;
   font-size: 30px;
+  padding-bottom: 15px;
 }
 
 .textContainer {
@@ -79,8 +117,7 @@ nav {
   max-width: 650px;
   align-self: center;
 }
-
-.img-muestra {
+.imagen-container .img-muestra {
   min-width: 90%;
 }
 
@@ -91,12 +128,110 @@ nav {
   padding-top: 55px;
   padding-bottom: 40px;
 }
-
 @media (max-width: 1200px) {
   .muestra {
     flex-direction: column;
   }
 }
+
+/* Estilos del formulario de contacto */
+.container {
+  /* Estilos para el contenedor principal */
+}
+.container h2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  font-size: 40px;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 20px;
+  /* Estilos para los contenedores de formulario y texto */
+  /* Espacio entre grupos de formulario */
+  /* Etiquetas de formulario */
+  /* Estilos generales para todos los campos de entrada y textarea */
+  /* Media query para estilos personalizados en pantalla pequeña */
+  /* Estilos para pantalla grande */
+  /* Botón de envío del formulario */
+}
+.container .form-container,
+.container .text-container {
+  padding: 20px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.container .form-group {
+  margin-bottom: 15px;
+  max-width: 400px;
+}
+.container label {
+  display: block;
+  font-weight: bold;
+}
+.container input,
+.container textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  resize: none;
+  display: block;
+}
+@media (max-width: 768px) {
+  .container input[type=text],
+  .container input[type=tel],
+  .container input[type=email] {
+    width: 100%;
+  }
+  .container textarea {
+    width: 100%;
+    height: 150px;
+    max-width: none;
+    resize: none;
+    display: block;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.container button[type=submit] {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.container .container-map {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 5rem;
+}
+.container .container-map h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.container .container-map iframe {
+  width: 100%;
+  max-width: 800px;
+  height: 300px;
+}
+
 /* Estilo Nosotros */
 .img-nosotros {
   width: 100%;
@@ -120,8 +255,8 @@ nav {
   padding: 15px;
   box-shadow: 5px 5px 5px 0px rgba(53, 66, 100, 0.5058823529);
 }
-
-.container-textoNosotros2 p {
+.container-textoNosotros1.container-textoNosotros2 p,
+.container-textoNosotros2.container-textoNosotros2 p {
   font-size: 20px;
   text-align: center;
 }
@@ -132,7 +267,6 @@ nav {
   margin: 10px;
   padding-top: 5px;
 }
-
 .boton a {
   display: block;
   padding: 10px 20px;
@@ -141,13 +275,12 @@ nav {
   text-decoration: none;
   border-radius: 8px;
 }
-
 .boton a:hover {
   background-color: var(--color3);
   transition: 0.2s;
 }
 
-/*ESTILO DE OBRAS FINALIZADAS*/
+/* ESTILO DE OBRAS FINALIZADAS */
 .container-column {
   display: grid;
   grid-gap: 1rem;
@@ -156,59 +289,55 @@ nav {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   text-align: center;
 }
-
-.column {
+.container-column .column {
   border: 1px solid #ccc;
   background-color: rgba(202, 200, 200, 0.548);
   border-radius: 5px;
 }
-
-.column > img {
+.container-column .column > img {
   margin-bottom: 1rem;
   max-width: 100%;
   height: auto;
   aspect-ratio: 16/9;
 }
-
 @media (max-width: 768px) {
-  .container {
+  .container-column .container {
     grid-template-columns: 1fr;
   }
 }
+
 .contenedor-texto {
   font-weight: bold;
   padding: 1rem;
   font-size: 1.2rem;
 }
 
-/*FIN DE ESTILOS DE OBRAS FINALIZADAS*/
-/*Estilos de Preguntas Frecuentes */
+/* FIN DE ESTILOS DE OBRAS FINALIZADAS */
+/* Estilos de Preguntas Frecuentes */
 .tituloPF {
   font-size: 40px;
   text-align: left;
   margin-bottom: 30px;
 }
-
 @media (max-width: 768px) {
   .tituloPF {
     font-size: 24px;
   }
 }
+
 .contenedor-preguntas {
   padding-top: 50px;
   padding-bottom: 50px;
+  /* Estilos para el acordeón */
 }
-
-/* Estilos para el acordeón */
-.accordion-item {
+.contenedor-preguntas .accordion-item {
   margin-bottom: 10px;
   border: 1px solid #dee2e6;
   border-radius: 5px;
   overflow: hidden;
   box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.1019607843);
 }
-
-.accordion-button {
+.contenedor-preguntas .accordion-item .accordion-button {
   font-weight: bold;
   font-size: 20px;
   border: none;
@@ -217,182 +346,19 @@ nav {
   text-align: left;
   transition: background-color 0.3s ease-in-out;
 }
-
-.accordion-button:hover {
+.contenedor-preguntas .accordion-item .accordion-button:hover {
   background-color: rgba(53, 66, 100, 0.4431372549);
   color: #000000;
 }
-
-.accordion-button.collapsed {
+.contenedor-preguntas .accordion-item .accordion-button.collapsed {
   background-color: rgba(145, 173, 197, 0.431372549);
   color: #354264;
 }
-
-.accordion-body {
+.contenedor-preguntas .accordion-item .accordion-body {
   background-color: #fff;
   color: #000000;
   font-size: 17px;
   padding: 20px;
-}
-
-/* Estilos del formulario de contacto */
-.container h2 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  font-size: 40px;
-}
-
-/* Estilos para el contenedor principal */
-.container {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-  padding: 20px;
-}
-
-/* Estilos para los contenedores de formulario y texto */
-.form-container,
-.text-container {
-  padding: 20px;
-  border-radius: 5px;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-}
-
-/* Espacio entre grupos de formulario */
-.form-group {
-  margin-bottom: 15px;
-  max-width: 400px;
-}
-
-/* Etiquetas de formulario */
-label {
-  display: block;
-  font-weight: bold;
-}
-
-/* Estilos generales para todos los campos de entrada y textarea */
-input,
-textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-sizing: border-box;
-  resize: none;
-  display: block;
-}
-
-/* Media query para estilos personalizados en pantalla pequeña */
-@media (max-width: 768px) {
-  input[type=text],
-  input[type=tel],
-  input[type=email] {
-    width: 100%;
-    /* Los campos de entrada ocuparán el ancho completo */
-  }
-  textarea {
-    width: 100%;
-    height: 150px;
-    /* Altura personalizada para el textarea */
-    max-width: none;
-    resize: none;
-    display: block;
-  }
-}
-/* Estilos para pantalla grande */
-@media (min-width: 768px) {
-  .container {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-/* Botón de envío del formulario */
-button[type=submit] {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.container-map {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  margin-bottom: 5rem;
-}
-
-.container-map h3 {
-  font-size: 20px;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-iframe {
-  width: 100%;
-  max-width: 800px;
-  height: 300px;
-}
-
-/* Fin de estilo de contacto */
-/* Estilos generales footer */
-.footer-nav {
-  background-color: var(--color3);
-  padding: 20px 0;
-  text-align: center;
-  color: #333;
-}
-
-.enlaces-nav {
-  margin: 0 15px;
-  text-decoration: none;
-  color: #333;
-  transition: color 0.2s;
-}
-
-.enlaces-nav:hover {
-  color: white;
-}
-
-.footer-text {
-  font-size: 14px;
-}
-
-/* Estilos específicos */
-.footer1,
-.footer2 {
-  margin: 0;
-  font-weight: bold;
-  font-size: 16px;
-}
-
-.footer2 {
-  font-size: 12px;
-}
-
-/* Estilos responsivos */
-@media (max-width: 768px) {
-  .footer-nav {
-    padding: 15px 0;
-  }
-  .enlaces-nav {
-    margin: 0 10px;
-  }
-  .footer-text {
-    font-size: 12px;
-  }
-  .footer1,
-  .footer2 {
-    font-size: 14px;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
