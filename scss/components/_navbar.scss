@@ -1,21 +1,24 @@
 /* NAV */
 nav {
     background-color: var(--color1);
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
 
     .nav-link {
         color: #ffffff;
 
         &:hover {
-            color: var(--color2);
+            color: #fff700;
         }
     }
 
     .navbar-brand {
         font-size: 35px;
-        color: #ffff00e5;
+        color: #fff700;
 
         &:hover {
-            color: #f5f5059f;
+            color: #f5f505ad;
+            transition: 0.2s;
         }
     }
 }

@@ -1,8 +1,12 @@
 /* Estilos de Preguntas Frecuentes */
 .tituloPF {
-    font-size: 40px;
-    text-align: left;
-    margin-bottom: 30px;
+    h2 {
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 700;
+        font-size: 40px;
+        text-align: left;
+        margin-bottom: 30px;
+    }
 
     @media (max-width: 768px) {
         font-size: 24px;
@@ -31,19 +35,21 @@
             transition: background-color 0.3s ease-in-out;
 
             &:hover {
-                background-color: #35426471;
+                background-color: #4e6ec071;
                 color: #000000;
             }
 
             &.collapsed {
-                background-color: #91adc56e;
-                color: #354264;
+                background-color: #6db4f18c;
+                color: #000000;
             }
         }
 
         .accordion-body {
             background-color: #fff;
             color: #000000;
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: 300;
             font-size: 17px;
             padding: 20px;
         }

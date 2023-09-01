@@ -1,18 +1,20 @@
 /* Estilos generales footer */
 .footer-nav {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
     background-color: var(--color3);
     padding: 20px 0;
     text-align: center;
-    color: #333;
+    color: #f3f5ef;
 
     .enlaces-nav {
         margin: 0 15px;
         text-decoration: none;
-        color: #333;
+        color: #f3f5ef;
         transition: color 0.2s;
 
         &:hover {
-            color: white;
+            color: #fff700;
         }
     }
 
