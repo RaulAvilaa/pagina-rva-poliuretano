@@ -17,11 +17,13 @@
     text-align: center;
 
     .column {
-        border: 1px solid #ccc;
-        background-color: rgba(202, 200, 200, 0.548);
+        padding: 1rem;
+        border: 1px solid #e6eeff;
+        background-color: #e6eeff;
         border-radius: 5px;
 
         >img {
+            margin-top: 1rem;
             margin-bottom: 1rem;
             max-width: 100%;
             height: auto;

@@ -17,6 +17,7 @@ nav {
   background-color: var(--color1);
   font-family: "Ubuntu", sans-serif;
   font-weight: 300;
+  font-size: 18px;
 }
 nav .nav-link {
   color: #ffffff;
@@ -313,11 +314,13 @@ nav .navbar-brand:hover {
   text-align: center;
 }
 .container-column .column {
-  border: 1px solid #ccc;
-  background-color: rgba(202, 200, 200, 0.548);
+  padding: 1rem;
+  border: 1px solid #e6eeff;
+  background-color: #e6eeff;
   border-radius: 5px;
 }
 .container-column .column > img {
+  margin-top: 1rem;
   margin-bottom: 1rem;
   max-width: 100%;
   height: auto;
